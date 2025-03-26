@@ -1,10 +1,11 @@
 import { type Character, ModelProviderName } from "@elizaos/core";
+import { storagePlugin } from "@storacha/elizaos-plugin";
 
 export const defaultCharacter: Character = {
     name: "Eliza",
     username: "eliza",
-    plugins: [],
-    modelProvider: ModelProviderName.LLAMALOCAL,
+    plugins: [storagePlugin],
+    modelProvider: ModelProviderName.OPENAI,
     settings: {
         secrets: {},
         voice: {
