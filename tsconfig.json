@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "lib": ["ES2020", "DOM"], // Added for console and setTimeout
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "allowImportingTsExtensions": true,
+        "noEmit": true,
+        "allowSyntheticDefaultImports": true
+    },
+    "files": [],
+    "references": [
+        {
+            "path": "packages/core"
+        },
+        {
+            "path": "packages/plugin-filecoin" // Added for this package
+        }
+    ]
+}
